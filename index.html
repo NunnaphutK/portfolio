@@ -14,6 +14,8 @@
     <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -34,7 +36,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-2">
               <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Skill & Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#certificate">Certificate</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -43,13 +46,12 @@
     </header>
     <div class="page-content">
       <div id="content">
-        <!-- line 68, 100 -->
         <!-- Header Part -->
         <header>
           <div class="cover bg-light">
             <div class="container px-3">
               <div class="row">
-                <div class="col-lg-6 pt-4 p-1"><img style="border-radius: 15px;" src="images/homepage/connecting.gif">
+                <div class="fa col-lg-4 pt-4 p-1" style="font-size: 200px; margin: 70px 80px; " id="div1"><p></p>
                 </div>
                 <div class="col-lg-6">
                   <div class="mt-5">
@@ -100,20 +102,43 @@
                 <span style="margin: 10px;"><i class="fa fa-language" style="font-size: 25px;"></i><b>&nbsp;&nbsp;&nbsp;Chinese</b></span>
                 <span style="margin: 10px 52px;"><i class="fa fa-language" style="font-size: 25px;"></i><b>&nbsp;&nbsp;&nbsp;German</b></span><br><br>
 
-                <h2 class="h4 my-4">Skills & Tools</h2>
-                <br><br>
-                
+                <h2 class="h4 my-2">Skills & Tools</h2>
+                <i class="devicon-python-plain-wordmark codesize"></i>
+                <i class="devicon-c-plain-wordmark codesize"></i>
+                <i class="devicon-html5-plain-wordmark codesize"></i>
+                <i class="devicon-css3-plain-wordmark codesize"></i>
+                <i class="devicon-javascript-plain codesize"></i>
+                <i class="devicon-bash-plain codesize"></i>
+                <i class="devicon-dotnetcore-plain codesize"></i>
+                <i class="devicon-sqlite-plain-wordmark codesize"></i>
+                <i class="devicon-mysql-plain-wordmark codesize"></i>
+                <i class="devicon-r-plain codesize"></i>
+                <i class="devicon-git-plain-wordmark codesize"></i>
+                <i class="devicon-arduino-plain-wordmark codesize"></i>
+                <i class="devicon-azure-plain-wordmark codesize"></i>
+                <i class="devicon-bootstrap-plain-wordmark codesize"></i>
+                <i class="devicon-canva-plain codesize"></i>
+                <i class="devicon-linux-plain codesize"></i>
+                <i class="devicon-nodejs-plain-wordmark codesize"></i>
+                <i class="devicon-photoshop-plain codesize"></i>
+                <i class="devicon-spss-plain codesize"></i>
+                <i class="devicon-tensorflow-original codesize"></i>
+                <i class="devicon-tailwindcss-plain codesize"></i>
+                <i class="devicon-ubuntu-plain-wordmark codesize"></i>
+                <i class="devicon-visualstudio-plain codesize"></i>
+                <i class="devicon-wordpress-plain-wordmark codesize"></i>
+
               </div>
-              <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/homepage/nunnaphut.webp" width="400" height="400" alt="Nunnaphut Kiticha"/></div>
+              <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/homepage/nunnaphut.webp" width="400" height="400" alt="Nunnaphut Kiticha" style="border: 5px solid #555;"/></div>
             </div>
           </div>
         </div>
 
-        <!-- Skill Part -->
+        <!-- Experience Part -->
         <div class="section px-2 px-lg-4 pt-5" id="portfolio">
           <div class="container">
             <div class="text-center mb-5">
-              <h2 class="marker marker-center">Skill & Experience </h2>
+              <h2 class="marker marker-center">Experience</h2>
             </div>
             <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
               <div class="grid-sizer"></div>
@@ -177,6 +202,15 @@
           </div>
         </div>
 
+        <!-- Certificate Part -->
+        <div class="section px-2 px-lg-4 pt-5" id="certificate">
+          <div class="container">
+            <div class="text-center mb-5">
+              <h2 class="marker marker-center">Certificate</h2>
+            </div>
+          </div>
+        </div>
+        
         <!-- Contact Part -->
         <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
           <div class="container-narrow">
@@ -185,22 +219,22 @@
             </div>
             <div class="row">
               <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="bg-light my-2 p-3 pt-2"><form action="https://formspree.io/f/mzbqejld"
-            method="POST">
-            <div class="form-group my-2">
-              <label for="name" class="form-label fw-bolder">Name</label>
-              <input class="form-control" type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group my-2">
-              <label for="email" class="form-label fw-bolder">Email</label>
-              <input class="form-control" type="email" id="email" name="_replyto" required>
-            </div>
-          <div class="form-group my-2">
-            <label for="message" class="form-label fw-bolder">Message</label>
-            <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button class="btn btn-primary mt-2" type="submit">Send</button>
-        </form>
+                <div class="bg-light my-2 p-3 pt-2">
+                  <form action="https://formspree.io/f/mzbqejld" method="POST">
+                    <div class="form-group my-2">
+                      <label for="name" class="form-label fw-bolder">Name</label>
+                      <input class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group my-2">
+                      <label for="email" class="form-label fw-bolder">Email</label>
+                      <input class="form-control" type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group my-2">
+                      <label for="message" class="form-label fw-bolder">Message</label>
+                      <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button class="btn btn-primary mt-2" type="submit">Send</button>
+                  </form>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
