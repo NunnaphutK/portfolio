@@ -140,76 +140,144 @@
               <h2 class="marker marker-center">Experience</h2>
             </div>
             <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
-              <div class="grid-sizer"></div>
+              <!-- <div class="grid-sizer"></div> -->
               <div class="grid-item">
+                <a href="afs.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/2-small.png">
+                    <figcaption>
+                      <h4 class="h5 mb-0">AFS Intercultural Programs</h4>
+                      <div>1 Year Exchange in Switzerland</div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a href="coverdance.html">
                   <figure class="portfolio-item"><img src="images/portfolio/steering.png">
                     <figcaption>
-                      <h4 class="h5 mb-0">CAD & 3D Model</h4>
-                      <div>SolidWork & AutoCAD</div>
+                      <h4 class="h5 mb-0">MBK Cover Dance 2020</h4>
+                      <div>Mix the Black with the Pink cover BLACKPINK</div>
                     </figcaption>
-                  </figure></div>
+                  </figure>
+                </a>
+              </div>
               <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/2-small.png">
-                    <figcaption> 
-                      <h4 class="h5 mb-0">Fundamental Web Development</h4>
-                      <div>Discovery Pisciner</div>
-                    </figcaption>
-                  </figure></div>
-              <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/motor.jpg">
-                    <figcaption> 
-                      <h4 class="h5 mb-0">Motor Sport</h4>
-                      <div>formula 1 racer (Coming Soon)</div>
-                    </figcaption>
-                  </figure></a></div>
-              <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/Poster-small.jpg" >
+                <a href="piscine.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/steering.png">
                     <figcaption>
-                      <h4 class="h5 mb-0">Material Characteristic</h4>
-                      <div>The study of modification of Calcium Copper Titanate thin films by addind Mn compound and their gas sensing properties</div>
+                      <h4 class="h5 mb-0">42Bangkok Piscine</h4>
+                      <div>Piscine Batch 13 (July, 2023)</div>
                     </figcaption>
-                  </figure></div>
+                  </figure>
+                </a>
+              </div>
               <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/photography.jpg">
+                <a href="dp.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/steering.png">
                     <figcaption>
-                      <h4 class="h5 mb-0">Photography</h4>
-                      <div>Shutter Stock</div>
+                      <h4 class="h5 mb-0">42Bangkok Discovery Piscine</h4>
+                      <div>Discovery Piscine Women & Non-IT</div>
                     </figcaption>
-                  </figure></div>
+                  </figure>
+                </a>
+              </div>
               <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/42feature-small.jpg"/>
+                <a href="aithaigen.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/steering.png">
                     <figcaption>
-                      <h4 class="h5 mb-0">100% Coding</h4>
-                      <div>42Bangkok Cadet (Coming Soon)</div>
+                      <h4 class="h5 mb-0">AIThaiGen</h4>
+                      <div>Development of Smart Farming Projects throgh AI Learning Platform: AIThaiGen</div>
                     </figcaption>
-                  </figure></a></div>
+                  </figure>
+                </a>
+              </div>
               <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/matlab-small.jpg">
+                <a href="42bangkok.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/steering.png">
                     <figcaption>
-                      <h4 class="h5 mb-0">Data Analysis</h4>
-                      <div>MatLab</div>
+                      <h4 class="h5 mb-0">42Bangkok Volunteer & Activities</h4>
+                      <div>All of Activities & became a Volunteer in 42Bangkok Coding School</div>
                     </figcaption>
-                  </figure></div>
+                  </figure>
+                </a>
+              </div>
               <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/scuba-small.jpg" >
+                <a href="uipath.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/steering.png">
                     <figcaption>
-                      <h4 class="h5 mb-0">Volunteer</h4>
-                      <div>Open Water Scuba Diver</div>
+                      <h4 class="h5 mb-0">Work with UiPath</h4>
+                      <div>All of projects using UiPath</div>
                     </figcaption>
-                  </figure></div>
+                  </figure>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a href="bbmoney.html">
+                  <figure class="portfolio-item"><img src="images/portfolio/steering.png">
+                    <figcaption>
+                      <h4 class="h5 mb-0">BBMONEY Application</h4>
+                      <div>Application for manage a small store by using .NET</div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
             </div>
+            
           </div>
         </div>
 
         <!-- Certificate Part -->
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+        
         <div class="section px-2 px-lg-4 pt-5" id="certificate">
           <div class="container">
             <div class="text-center mb-5">
               <h2 class="marker marker-center">Certificate</h2>
             </div>
+            <div class="slideshow-container">
+              <div class="mySlides fadeslide"><img src="images/portfolio/42feature-small.jpg" style="width:100%"></div>
+              <div class="mySlides fadeslide"><img src="images/portfolio/2-small.png" style="width:100%"></div>
+              <div class="mySlides fadeslide"><img src="images/portfolio/2-small.png" style="width:100%"></div>
+              <div class="mySlides fadeslide"><img src="images/portfolio/2-small.png" style="width:100%"></div>
+              <div class="mySlides fadeslide"><img src="images/portfolio/2-small.png" style="width:100%"></div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div style="text-align:center">
+              <br><span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
           </div>
         </div>
-        
+
         <!-- Contact Part -->
         <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
           <div class="container-narrow">
