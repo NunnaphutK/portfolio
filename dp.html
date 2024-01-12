@@ -113,6 +113,80 @@
             </div>
         </div>
 
+        <!-- Code Part -->
+        <br><h1 class="intro-title marker" style="margin: 30px;">Discovery Piscine Code</h1><br><br>
+        <h2></h2>
+        <pre>
+          <code class="bash">
+            # -------------- argv.sh -------------- #
+            #!/bin/bash
+            if [ $# -eq 0 ]
+            then
+              echo "No arguments supplied";
+            fi
+            if [ $1 ]
+            then
+              echo "$1";
+            fi
+            if [ $2 ]
+            then
+              echo "$2";
+            fi
+            if [ $3 ]
+            then
+              echo "$3";
+            fi
+
+            # ------------- build.sh ------------- #
+            #!/bin/bash
+            if [ $# -eq 0 ]
+            then
+              echo "No arguments supplied"
+            fi
+            if [ $# -ne 0 ]
+            then
+              for i in $@
+              do
+                mkdir "ex${i}"
+              done
+            fi
+          </code>
+          <code class="bash">
+            # -------------- argv.sh -------------- #
+            #!/bin/bash
+            if [ $# -eq 0 ]
+            then
+              echo "No arguments supplied";
+            fi
+            if [ $1 ]
+            then
+              echo "$1";
+            fi
+            if [ $2 ]
+            then
+              echo "$2";
+            fi
+            if [ $3 ]
+            then
+              echo "$3";
+            fi
+
+            # ------------- build.sh ------------- #
+            #!/bin/bash
+            if [ $# -eq 0 ]
+            then
+              echo "No arguments supplied"
+            fi
+            if [ $# -ne 0 ]
+            then
+              for i in $@
+              do
+                mkdir "ex${i}"
+              done
+            fi
+          </code>
+        </pre>
+
         <!-- Footer Part -->
         <footer class="pt-4 pb-4 text-center bg-light">
           <div class="container">

@@ -331,3 +331,28 @@ footer a:not(.nav-link) {
 @media only screen and (max-width: 300px) {
   .prev, .next {font-size: 11px}
 }
+
+.expandable {
+  overflow: hidden;
+  max-height: 200px; /* Set the initial max height */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.expandable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.expandable-box {
+  overflow: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+}
+
+.expanded {
+  max-height: none; /* Remove the max height on expansion */
+}
