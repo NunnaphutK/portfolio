@@ -291,6 +291,7 @@ footer a:not(.nav-link) {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  text-decoration: none;
 }
 
 .next {
@@ -342,7 +343,7 @@ footer a:not(.nav-link) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px 10px;
   box-sizing: border-box;
 }
 
