@@ -114,17 +114,57 @@
         </div>
 
         <!-- Code Part -->
-        <pre><code class="C">&lt;!DOCTYPE html&gt;
-          &lt;html lang="en"&gt;
-          &lt;head&gt;
-            &lt;meta charset="UTF-8"&gt;
-            &lt;title&gt;My Webpage&lt;/title&gt;
-          &lt;/head&gt;
-          &lt;body&gt;
-            &lt;h1&gt;Hello, World!&lt;/h1&gt;
-          &lt;/body&gt;
-          &lt;/html&gt;</code>
-        </pre>
+        <br><h1 class="intro-title marker" style="margin: 30px;">Piscine Example Code</h1><br><br>
+        <div class="expandable" onclick="toggleExpand(this)">
+          <div class="expandable-header">
+            <p></p>Click to expand
+          </div>
+          <pre class="expandable-box">
+            <code class="bash">
+              # -------------- argv.sh -------------- #
+              #!/bin/bash
+              if [ $# -eq 0 ]
+              then
+                echo "No arguments supplied";
+              fi
+              if [ $1 ]
+              then
+                echo "$1";
+              fi
+              if [ $2 ]
+              then
+                echo "$2";
+              fi
+              if [ $3 ]
+              then
+                echo "$3";
+              fi
+
+              # ------------- build.sh ------------- #
+              #!/bin/bash
+              if [ $# -eq 0 ]
+              then
+                echo "No arguments supplied"
+              fi
+              if [ $# -ne 0 ]
+              then
+                for i in $@
+                do
+                  mkdir "ex${i}"
+                done
+              fi
+            </code>
+          </pre>
+        </div>
+        <script>
+          function toggleExpand(element) {
+              element.classList.toggle('expanded');
+          }
+        </script>
+
+        <div class="text-center" style="margin: 20px;">
+          <a href="https://github.com/NunnaphutK/Piscine.git" target="_blank"><i class="fa fa-github"> Click here to see more</i></a>
+        </div>
 
         <!-- Footer Part -->
         <footer class="pt-4 pb-4 text-center bg-light">

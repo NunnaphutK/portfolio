@@ -114,78 +114,73 @@
         </div>
 
         <!-- Code Part -->
-        <br><h1 class="intro-title marker" style="margin: 30px;">Discovery Piscine Code</h1><br><br>
-        <h2></h2>
-        <pre>
-          <code class="bash">
-            # -------------- argv.sh -------------- #
-            #!/bin/bash
-            if [ $# -eq 0 ]
-            then
-              echo "No arguments supplied";
-            fi
-            if [ $1 ]
-            then
-              echo "$1";
-            fi
-            if [ $2 ]
-            then
-              echo "$2";
-            fi
-            if [ $3 ]
-            then
-              echo "$3";
-            fi
+        <br><h1 class="intro-title marker" style="margin: 30px;">Discovery Piscine Example Code</h1><br><br>
+        <div class="expandable" onclick="toggleExpand(this)">
+          <div class="expandable-header">
+            <p></p>Click to expand
+          </div>
+          <pre class="expandable-box">
+            <code class="bash">
+              # -------------- argv.sh -------------- #
+              #!/bin/bash
+              if [ $# -eq 0 ]
+              then
+                echo "No arguments supplied";
+              fi
+              if [ $1 ]
+              then
+                echo "$1";
+              fi
+              if [ $2 ]
+              then
+                echo "$2";
+              fi
+              if [ $3 ]
+              then
+                echo "$3";
+              fi
 
-            # ------------- build.sh ------------- #
-            #!/bin/bash
-            if [ $# -eq 0 ]
-            then
-              echo "No arguments supplied"
-            fi
-            if [ $# -ne 0 ]
-            then
-              for i in $@
-              do
-                mkdir "ex${i}"
-              done
-            fi
-          </code>
-          <code class="bash">
-            # -------------- argv.sh -------------- #
-            #!/bin/bash
-            if [ $# -eq 0 ]
-            then
-              echo "No arguments supplied";
-            fi
-            if [ $1 ]
-            then
-              echo "$1";
-            fi
-            if [ $2 ]
-            then
-              echo "$2";
-            fi
-            if [ $3 ]
-            then
-              echo "$3";
-            fi
+              # ------------- build.sh ------------- #
+              #!/bin/bash
+              if [ $# -eq 0 ]
+              then
+                echo "No arguments supplied"
+              fi
+              if [ $# -ne 0 ]
+              then
+                for i in $@
+                do
+                  mkdir "ex${i}"
+                done
+              fi
+            </code>
+          </pre>
+        </div>
+        <div class="expandable" onclick="toggleExpand(this)">
+          <pre class="expandable-box">
+            <code class="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html>
+              &lt;body>
+              &lt;h1>&lt;center>Piscine Web&lt;/center></h1>
+              &lt;a href="https://www.youtube.com/watch?v=INscMGmhmX4">
+              &lt;img src="https://miro.medium.com/v2/resize:fit:753/1*P-hIQiNfh822rycMgyn_LA.jpeg">
+              &lt;/a>
+              &lt;img src="https://contentstatic.techgig.com/photo/99194118.cms">
+              &lt;/body>
+              &lt;/html>
+            </code>
+          </pre>
+        </div>
+        <script>
+          function toggleExpand(element) {
+              element.classList.toggle('expanded');
+          }
+        </script>
 
-            # ------------- build.sh ------------- #
-            #!/bin/bash
-            if [ $# -eq 0 ]
-            then
-              echo "No arguments supplied"
-            fi
-            if [ $# -ne 0 ]
-            then
-              for i in $@
-              do
-                mkdir "ex${i}"
-              done
-            fi
-          </code>
-        </pre>
+        <div class="text-center" style="margin: 20px;">
+          <a href="https://github.com/NunnaphutK/Discovery-Piscine.git" target="_blank"><i class="fa fa-github"> Click here to see more</i></a>
+        </div>
 
         <!-- Footer Part -->
         <footer class="pt-4 pb-4 text-center bg-light">
