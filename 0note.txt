@@ -8,14 +8,11 @@
 ---Shopmai
 ---42Bkk
 ---index
+---UiPath
 
-Discovery Piscine [Code]
-    picture [phone]
+---Discovery Piscine [Code]
 Piscine [Code]
     picture
-UiPath
-    picture
-test [Delete]
 
 BBMoney --- video [phone]
 Internet Cafe --- video
