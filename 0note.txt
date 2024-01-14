@@ -12,13 +12,13 @@ test [Delete]
     picture
     -video
 BBMoney
-    -video
+    -video [phone]
 Discovery Piscine
-    picture
+    picture [phone]
 index
     picture [UiPath]
 Piscine
     picture
     code
 UiPath
-    picture
+    picture [Email Non]
