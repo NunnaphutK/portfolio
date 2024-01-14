@@ -16,10 +16,10 @@ BBMoney
 Discovery Piscine
     picture [phone]
 index
-    picture [UiPath]
+    picture [UiPath 42event]
 Piscine
     picture
     code
 UiPath
-    picture [Email Non]
+    picture
 
