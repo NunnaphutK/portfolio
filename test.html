@@ -1,76 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>nunnaphut kiticha</title>
-    <link rel="icon" href="images/homepage/logo.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    </noscript>
-    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="css/styles/default.min.css">
-    <script src="scripts/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog Title</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="expandable" onclick="toggleExpand(this)">
-      <div class="expandable-header">
-        <span>Click to expand</span>
-        <span>➕</span>
-      </div>
-        <pre class="expandable-box"><code class="language-c">
-            // Example C code
-            #include <stdio.h>
-
-            int main() {
-                printf("Hello, World!\n");
-                return 0;
-            }
-            // Example C code
-            #include <stdio.h>
-
-            int main() {
-                printf("Hello, World!\n");
-                return 0;
-            }
-            // Example C code
-            #include <stdio.h>
-
-            int main() {
-                printf("Hello, World!\n");
-                return 0;
-            }
-            // Example C code
-            #include <stdio.h>
-
-            int main() {
-                printf("Hello, World!\n");
-                return 0;
-            }
-        </code></pre>
-    </div>
-
-    <script>
-        function toggleExpand(element) {
-            element.classList.toggle('expanded');
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
         }
-    </script>
+
+        .containerdh {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        article {
+            margin-bottom: 40px;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+        }
+
+        article h2 {
+            color: #333;
+        }
+
+        article .author,
+        article .date {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        article .excerpt {
+            color: #888;
+        }
+
+        article a {
+            color: #3498db;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #eee;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+
+    <main>
+        <div class="container">
+            <article>
+                <img src="images/experience/42event1.jpg" alt="Blog Image">
+                <h2>Blog Post Title</h2>
+                <p class="author">By John Doe</p>
+                <p class="date">Published on January 12, 2024</p>
+                <p class="excerpt">This is a brief excerpt of the blog post. It can contain a summary or teaser of the
+                    content.</p>
+                <a href="full-post.html">Read More</a>
+            </article>
+
+            <!-- Repeat the article structure for other blog posts -->
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

