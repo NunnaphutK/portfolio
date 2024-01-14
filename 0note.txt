@@ -6,20 +6,20 @@
 ---Handwriting Recognation
 ---Sentimental Analyst
 ---Shopmai
-test [Delete]
-
-42Bkk
-    picture
-    -video
-BBMoney
-    -video [phone]
-Discovery Piscine
+Discovery Piscine [Code]
     picture [phone]
-index
-    picture [UiPath 42event]
-Piscine
+Piscine [Code]
     picture
-    code
 UiPath
     picture
+42Bkk
+    picture
+test [Delete]
+
+
+BBMoney --- video [phone]
+index
+    picture [UiPath 42event]
+
+
 
