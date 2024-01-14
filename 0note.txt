@@ -11,10 +11,7 @@
 ---UiPath
 
 ---Discovery Piscine [Code]
-Piscine [Code]
-    picture
+---Piscine [Code]
 
 BBMoney --- video [phone]
 Internet Cafe --- video
-
-
