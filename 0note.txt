@@ -4,7 +4,6 @@
 ---Darkhole1
 ---AiThaiGen
 ---Handwriting Recognation
-    -video 07.06 [Edit]
 ---Sentimental Analyst
 ---Shopmai
 test [Delete]
