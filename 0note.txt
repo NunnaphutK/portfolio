@@ -9,9 +9,7 @@
 ---42Bkk
 ---index
 ---UiPath
-
----Discovery Piscine [Code]
----Piscine [Code]
-
-BBMoney --- video [phone]
+---Discovery Piscine
+---Piscine
+---BBMoney
 Internet Cafe --- video
