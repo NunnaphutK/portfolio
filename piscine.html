@@ -70,10 +70,11 @@
       <div class="fab" id="div1"></div>
       <div class="container">
         <div class="slideshow-container">
-          <figure class="portfolio-item mySlides fadeslide"><img src="images/experience/piscine1.jpg" style="width: 100%;">
+          <figure class="portfolio-item mySlides fadeslide"><img src="images/experience/piscine1.jpg"
+              style="width: 100%;">
             <figcaption>
               <h4 class="h5 mb-0">42Bangkok</h4>
-              <div> New Cadet August 2023 Intake  </div>
+              <div> New Cadet August 2023 Intake </div>
             </figcaption>
           </figure>
         </div>
@@ -87,39 +88,49 @@
           <p></p>Click to expand
         </div>
         <pre class="expandable-box">
-            <code class="bash">
-              # -------------- argv.sh -------------- #
-              #!/bin/bash
-              if [ $# -eq 0 ]
-              then
-                echo "No arguments supplied";
-              fi
-              if [ $1 ]
-              then
-                echo "$1";
-              fi
-              if [ $2 ]
-              then
-                echo "$2";
-              fi
-              if [ $3 ]
-              then
-                echo "$3";
-              fi
+            <code class="langauege-c">
+              /* ************************************************************************** */
+              /*                                                                            */
+              /*                                                        :::      ::::::::   */
+              /*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
+              /*                                                    +:+ +:+         +:+     */
+              /*   By: nkiticha &lt;marvin@42.fr>                    +#+  +:+       +#+        */
+              /*                                                +#+#+#+#+#+   +#+           */
+              /*   Created: 2023/07/19 17:55:54 by nkiticha          #+#    #+#             */
+              /*   Updated: 2023/07/19 18:47:08 by nkiticha         ###   ########.fr       */
+              /*                                                                            */
+              /* ************************************************************************** */
 
-              # ------------- build.sh ------------- #
-              #!/bin/bash
-              if [ $# -eq 0 ]
-              then
-                echo "No arguments supplied"
-              fi
-              if [ $# -ne 0 ]
-              then
-                for i in $@
-                do
-                  mkdir "ex${i}"
-                done
-              fi
+              void	ft_sort_int_tab(int *tab, int size)
+              {
+                int	i;
+                int	swap;
+
+                i = 0;
+                while (i < size - 1)
+                {
+                  if (tab[i] > tab[i + 1])
+                  {
+                    swap = tab[i];
+                    tab[i] = tab[i + 1];
+                    tab[i + 1] = swap;
+                    i = 0;
+                  }
+                  else
+                  {
+                    i ++;
+                  }
+                }
+              }
+
+              /*#include &lt;stdio.h>
+              int main() {
+                  int tab[] = {9,5,8,7,6,10};
+                  int size = 6;
+                  printf("%d %d %d %d %d %d\n",tab[0],tab[1],tab[2],tab[3],tab[4],tab[5]);
+                  ft_sort_int_tab(tab,size);
+                  printf("%d %d %d %d %d %d\n",tab[0],tab[1],tab[2],tab[3],tab[4],tab[5]);
+              }*/
             </code>
           </pre>
       </div>
